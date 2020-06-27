@@ -4,11 +4,13 @@ import Article_list from '../components/content/articleList'
 
 const home_page = function(){
     return (
-        <React.Fragment>
+        <div className="home">
             <Recomended_developer/>
             <Article_list/>
+        </div>
+            
 
-        </React.Fragment>
+        
     )
 }
 

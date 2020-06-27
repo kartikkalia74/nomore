@@ -6,13 +6,15 @@ type states = {
     openhistory:Boolean,
 
 }
+
+
 const ChatPage = function (){
 
      let [openhistory,changetohistory]= useState(false)
 
 
     return( <div className="chat f">
-        <UserList/>
+        <UserList changetohistory={changetohistory}/>
         <ChatScreen openhistory={openhistory}/>
     </div>)
 

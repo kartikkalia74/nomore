@@ -10,7 +10,7 @@ const Developer = function (){
                 <p> write blog solve on nodejs reactjs and solve problems in respective technology</p>
                 <div className="f l fw even">{tags.map((tag,index)=><li key={index} style={{color:"blue"}}> #{tag}</li>)}</div>
                 
-                <div>
+                <div className="center-bttn">
                <button className="pointer">follow button</button> 
             </div>
             </div>

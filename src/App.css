@@ -104,11 +104,17 @@ header {
   justify-content: space-evenly;
 }
 
-
+.chat{
+max-height: 79vh;
+}
+.center-bttn{
+  display: flex;
+  justify-content: center;
+}
 .header-1half {
   width: 40%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .header-2half {
@@ -136,21 +142,59 @@ header {
 
 .content{
   /* border: 2px solid ; */
+  overflow: auto;
+  max-height: 76vh;
   margin: 2% ;
+}
+.home{
+  max-height: 76vh;
+  overflow: auto;
 }
 
 .chatPage{
-  flex-grow: 3;
+  flex-grow: 6;
+  flex-basis: 60%;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #C2FFCA;
 }
 .userlist{
   flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
   background: antiquewhite;
   overflow: auto;
-  height: 86vh;
-    width: 40vw;
+ 
+  /* height: 86vh; */
+  /* width: 40vw; */
+}
+.chatcontent{
+  flex: 10;
+  overflow: auto;
 }
 .userCard{
   display: flex;
   border: 1px solid red;
   cursor: pointer;
+}
+
+.typing{
+  flex: 2;
+}
+.left {
+  background-color: #fff685;
+  align-self: flex-start;
+}
+.right{
+  background-color:#00DDFF;
+  align-self: flex-end;
+}
+.message{
+  padding: 10px;
+}
+
+.chating{
+display: flex;
+flex-direction: column;
 }
